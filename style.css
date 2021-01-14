@@ -68,6 +68,10 @@ h1, h2, h3, h4, h5, h6 {
 .hyperlink:hover{
   color: #f64f59;
 }
+
+.navbar .sticky{
+  background:#c3923c; 
+}
 /*--------------------------------------------------------------
 # mobile
 --------------------------------------------------------------*/
@@ -203,3 +207,71 @@ h1, h2, h3, h4, h5, h6 {
   color:#f64f59;
 }
 
+/*--------------------------------------------------------------
+# sections general
+--------------------------------------------------------------*/
+section{
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-title{
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.section-title h2{
+  font-size:32px;
+  font-weight:bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+  color: #404040;
+  text-align: center;
+}
+
+.section-title h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #dddddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background:salmon;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+/*--------------------------------------------------------------
+# about section
+--------------------------------------------------------------*/
+.about .content h3{
+  font-weight: 700;
+  font-size: 26px;
+  color: #9ca3aa;
+}
+
+.about .content ul{
+  list-style: none;
+  margin-top: 20px;
+}
+
+.about .content ul li{
+  padding-bottom: 10px;
+}
+
+.about .content ul i{
+  font-size: 20px;
+  padding-right: 2px;
+  color: #404040;
+}
