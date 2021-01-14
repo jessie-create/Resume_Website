@@ -37,13 +37,19 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 .navbar{
     height: 60px;
-    background-color: rgb(213, 178, 118, 0.6);
-    border-bottom: 1px solid rgb(213, 178, 118, 0.6);
-    z-index: 1;
+    background-color: rgb(213, 178, 118, 0.85);
+    border-bottom: 1px solid rgb(213, 178, 118, 0.85);
+    z-index: 999;
     display: flex;
-    position: relative;
+    width: 100%;
+    position: fixed;
     align-items: center;
     justify-content: space-between;
+}
+
+.navbar .active{
+  background-color:#d5b276 ;
+  z-index: 999;
 }
 
 .navbar-name{
@@ -69,9 +75,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #f64f59;
 }
 
-.navbar .sticky{
-  background:#c3923c; 
-}
 /*--------------------------------------------------------------
 # mobile
 --------------------------------------------------------------*/
@@ -263,7 +266,12 @@ section{
 
 .about .content ul{
   list-style: none;
-  margin-top: 20px;
+  margin-top: 50px;
+}
+
+.selfie{
+  margin-top: 50px;
+  text-align: center;
 }
 
 .about .content ul li{
@@ -275,3 +283,23 @@ section{
   padding-right: 2px;
   color: #404040;
 }
+
+@media(max-width: 992px){
+  .img-fluid {
+    width:70%;
+  }
+}
+
+/*--------------------------------------------------------------
+# skills section
+--------------------------------------------------------------*/
+.skills ul {
+  list-style: none;
+  margin-top: 50px;
+}
+
+.skills ul li{
+  padding-bottom: 15px;
+}
+
+
