@@ -7,7 +7,7 @@ body {
   background:rgb(219, 189, 138, 0.2)
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6{
     font-family: "Raleway", sans-serif;
   }
 
@@ -25,13 +25,35 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-
 #topsection .contact-info i{
     color:#d5b276;
     padding-right: 5px;
     font-size:16px;
 }
 
+#topsection .languages ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+#topsection .languages ul a {
+  color: #404040;
+}
+
+
+#topsection .languages ul li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.link{
+  text-decoration: none;
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -302,4 +324,59 @@ section{
   padding-bottom: 15px;
 }
 
+/*--------------------------------------------------------------
+# resume section
+--------------------------------------------------------------*/
+.resume .resume-title{
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color:#404040
+}
 
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #f64f59;
+  position: relative;
+}
+
+.resume .resume-item h4{
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color:#f64f59;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5{
+  font-size: 16px;
+  background: rgb(247, 248, 249, 0.7);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item:last child{
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -11px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #f64f59;
+}
+
+.row {
+  margin: 15px;
+}
