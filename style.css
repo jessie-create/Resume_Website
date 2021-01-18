@@ -280,6 +280,11 @@ section{
 /*--------------------------------------------------------------
 # about section
 --------------------------------------------------------------*/
+.about{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgb(213, 178, 118, 0.85)
+}
+
 .about .content h3{
   font-weight: 700;
   font-size: 26px;
@@ -377,6 +382,92 @@ section{
   border: 2px solid #f64f59;
 }
 
-.row {
-  margin: 15px;
+/*--------------------------------------------------------------
+# portfolio section
+--------------------------------------------------------------*/
+.project-box{
+  margin-bottom: 3rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.project-box:hover img{
+  transform: scale(1.3);
+}
+
+.project-img{
+  display:block;
+  overflow: hidden;
+}
+
+.project-img img{
+  transition: all 1s;
+}
+
+.project-content {
+  padding: 2rem 3% ;
+}
+
+.project-content .p-more{
+  color:salmon;
+  font-size: 10px;
+}
+
+.project-content .p-more .p-tools{
+  color: #404040;
+  font-size: 10px;
+}
+
+.project-content .click-more{
+  font-size: 30px;
+  float: right;
+}
+
+.project-content .click-more a{
+  color:salmon;
+}
+
+/*--------------------------------------------------------------
+# portfolio inner section
+--------------------------------------------------------------*/
+.project-inner{
+  padding: 15px 0;
+  min-height: 40px;
+  margin-top: 82px;
+}
+
+@media (max-width: 992px){
+  .project-inner{
+    margin-top: 74px;
+  }
+}
+
+.project-inner ol{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 17px;
+}
+
+.project-inner .link{
+  color:#f64f59;
+}
+
+.project-inner ol li+li{
+  padding-left: 10px;
+}
+
+.project-inner ol li+li::before{
+  display: inline-block;
+  padding-right: 10px;
+  content: "/"
+}
+
+.project-subtitle{
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 20px;
 }
