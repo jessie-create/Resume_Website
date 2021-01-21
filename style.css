@@ -17,6 +17,9 @@ h1, h2, h3, h4, h5, h6{
   padding:0;
 }
 
+a{
+  text-decoration: none;
+}
 /*--------------------------------------------------------------
 # Top
 --------------------------------------------------------------*/
@@ -415,10 +418,6 @@ section{
   font-size: 10px;
 }
 
-.project-content .p-more .p-tools{
-  color: #404040;
-  font-size: 10px;
-}
 
 .project-content .click-more{
   font-size: 30px;
@@ -429,6 +428,9 @@ section{
   color:salmon;
 }
 
+.project-content a{
+  color: #404040;
+}
 /*--------------------------------------------------------------
 # portfolio inner section
 --------------------------------------------------------------*/
@@ -478,6 +480,10 @@ section{
   text-align: center;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.economy-content p{
+  line-height: 25px;
 }
 /*--------------------------------------------------------------
 # footer section
