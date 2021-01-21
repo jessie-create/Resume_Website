@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "utf-8">
+    <meta content = "width-device-width, initial-scale = 1.0" name = "viewport">
+
+    <title>Jie Wang (Jessie)</title>
+    <meta content = "Jie Wang Resume" name = "description">
+    <meta content = "html, css, javascript " name = "keywords">
+
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<!-- css file -->
+<link href="style.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="vendor/css/bootstrap-grid.css" rel="stylesheet">
+<link rel="stylesheet" href="/venobox/venobox.min.css" />
+
+
+</head>
+
+<body>
+<!-- Top section --> 
+<div id = "topsection">
+    <div class = "contact-info">
+        <i class='bx bxs-phone'></i>+1 617-470-6388
+        <i class='bx bx-mail-send'></i>Wang.jie2@northeastern.edu
+    </div>
+    <div class="languages">
+        <ul>
+            <li><a href="#" class="link">English/</a></li>
+            <li><a href="#" class="link">中文</a></li>
+        </ul>
+</div>
+</div>
+
+
+<!-- header --> 
+<nav class = "navbar">
+    <a href="#" class="navbar-name">Jie Wang</a>
+    <div class="navbar-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>   
+    <div class="navbar-menu">
+        <a href = "index.html" class = "hyperlink">Home</a>
+        <a href = "index.html" class = "hyperlink">About</a>
+        <a href = "index.html" class = "hyperlink">Resume</a>
+        <a href = "index.html" class = "hyperlink">Project</a>
+    </div>
+</nav>
+
+<!-- content title --> 
+<section id="project-inner" class="project-inner">
+    <div class="container">
+        <ol>
+            <li><a href="index.html" class="link">Back</a></li>
+            <li>Project5</li>
+        </ol>
+        <h1>GE Aviation: IP Theft and Fraud Detection Analysis</h1>
+    </div>
+</section>
+
+<section class="economy">
+    <div class="container">
+        <div class="economy-content">
+            <div class="project-subtitle">
+                <p>Introduction</p>
+            </div>
+            <p>GE Aviation provides worldwide business, commercial, military and aviation jet, turboprop engines etc. services to their global customer network (GE Official Website). Therefore, it is important for GE to prevent their internal information from hackers, external personnel even their own staff. In addition, GE has executed an alert system to monitor employees’ computers to confirm they would not do any actions that could threat company’s intellectual property. In addition, I will perform unsupervised learning on atomic alert and threshold alert which I will use k-means to get the clustering and former information. As for the current alert system, the most of classification is TP/DE which give meaningless effort so we should find the optimized threshold of probabilities to trigger the alerts and give some recommendations to the sponsor how to save the cost of this IP protection program. Also, increasing the percent of TP/HIGH and TP/LOW is a way to increase the accuracy of effective alerts. Moreover, I will give the predictive models of different types of alert in different risk groups and analyze the models to obtain the results.
+                In this project, I used KNIME and Tableau to conduct the EDA analysis and unsupervised learning for four types of alerts also I used K-means clustering to do the preliminary observation for each alert. Furthermore, I did decision trees of TP/HIGH and TP/HIGH & TP/LOW for each model to do prediction of the four alerts. </p>
+            <p>FP - no risk, indicator misfired./ TP/DE - indicator fired correctly, but little to no risk.  Do not escalate./ TP/LOW - Risk involved, but handled by tier 1 analyst./ TP/HIGH - High risk or evidence of coordinated effort.  Further investigation required.
+            <div class="project-subtitle">
+                <p>Exploratory Data Analysis</p>
+            </div>
+            <div class="graphs">
+                <img src="image/project-5/graph-1.jpg" class="project-graphs" width="60%">
+            </div>
+            <p>From above, we can know that Analyst_2, Analyst_3 and Analyst_5 have the least workload towards different types of classification. However, we still need to have deeper analysis of these analysts to make the final decision. For example, which of them put more effort in classification of TP/HIGH or TP/LOW. </p>
+            <div class="graphs">
+                <img src="image/project-5/graph-2.jpg" class="project-graphs" width="60%">
+            </div>
+            <p>TP/HIGH classification occupies the lowest part in all of alerts especially in the atomic alert. In the following, I will have deeper analysis and insights in the TP/HGIH and TP/LOW.</p>
+            <div class="project-subtitle">
+                <p>K-means of Different Types of Alerts</p>
+            </div>
+            <p>I use k-means clustering to do the unsupervised learning and did 3 to 12 clusters for each model which include atomic alert, daily heat alert, weekly heat alert and monthly heat alert. From the output, I will decide how many clusters are the optimal one and do further observation.</p>
+            <p> A. Atomic Alert</p>
+            <div class="graphs">
+                <img src="image/project-5/graph-3.jpg" class="project-graphs" width="60%">
+            </div>
+            <p> From the cluster output of atomic alert, I think 11 clusters is the most ideal number. Since in the 11 clusters, there are the same numbers of effective statistics in TP/LOW with the statistics in 12 clusters so 11 clusters are the most optimize one. From 11 clusters, I conclude that Senior_Analyst_1 put the most effort; Analyst_2 and Analyst_3 don’t have any workload; TP/DE and FP occupy the most of classification but there still has some of statistics about TP/HIGH especially TP/LOW that we can analyze; HRU 11 and App_9_Atomic_DVD_Burn_IND are important. </p>
+            <p> B. Daily Heat Alert</p>
+            <div class="graphs">
+                <img src="image/project-5/graph-4.jpg" class="project-graphs" width="60%">
+            </div>
+            <p>As for daily heat alert, I think 5 clusters is enough to observe the results because since the clusters are 6, the output of TP/LOW is only 1. Then, I observe that Senior_Analyst_1 still put the most effort and Analyst_3 has the least effort; the most classification is still TP/DE but there are a lot TP/LOW can be do deeper analysis; HRU13, App_1_Heat_Box_PRE_2016_Q3, App_13_Heat_Print_IND are important. </p>
+            <p> C. Weekly Heat Alert</p>
+            <div class="graphs">
+                <img src="image/project-5/graph-5.jpg" class="project-graphs" width="60%">
+            </div>
+            <p>As for weekly heat alert,I think 7 clusters are enough to observe because from 8 clusters, the effective statistics of TP/HIHG become less. I conclude that Senior_Analyst_1 still put the most effort and Senior_Analyst_2 is also important; TP/DE is the most classification and TP/HIGH is second;HRU11,App_1_Heat_Box_PRE_2016_Q3, App_3_Heat_Email_CAD/App_3_Heat_Email_CD/Threshold_Heat_NTD_EXE_IND are important. </p>
+            <p>D. Monthly Heat Alert</p>
+            <div class="graphs">
+                <img src="image/project-5/graph-6.jpg" class="project-graphs" width="60%">
+            </div>
+            <p>I think 8 clusters are the most ideal for monthly heat alert and Seinior_Analyst_1, Senior_Analyst_2, TP/HIGH, HRU 11 and App_3_Heat_Email_CAD/App_3_Heat_Email_CD/Threshold_Heat_NTD_EXE_IND are important factors.</p>
+            <div class="project-subtitle">
+                <p>3.	Decision Tree Models of Different Types of Alerts</p>
+            </div>
+            <p>In this part, I will show the decision tree model, confusion matrix and lift chart of atomic alert, daily heat alert, weekly heat alert and monthly alert. Also, the decision tree models will be conducted in two risk groups that are high risk group (TP/HIGH) and notable risk group (TP/HIGH & TP/LOW) in these four alerts. From the results of decision tree, we can know which factors are important for different cases. In addition, in all of decision tree models, the first branch is the most important factor for the model and has the highest correlation.</p>
+            <div class="graphs">
+                <img src="image/project-5/graph-7.jpg" class="project-graphs" width="60%">
+            </div>
+            <p>Above are the decision tree and important branches of the tree in the high risky group of atomic alert. We can see that career_band_2 is highly related to the model with percent of 0.5. It means that the portion of high risk in the atomic alert is pretty low. In addition, the branch of App_13_Atomic_NTU_IND&career_band_2 has 78.4%, senior_analyst_1 has 87.3% and the branch of job_function_7&App_13_Atomic_NTU_IND&career_band_2 occupies 93.9% of detection probability respectively. Therefore, the factors that App_13_Atomic_NTU_IND, job_function_7 and senior_analyst_1 are important in this case.</p>
+            <div class="graphs">
+                <img src="image/project-5/graph-8.jpg" class="project-graphs" width="60%">
+            </div>
+            <p>From graph, variable that job_function_7 is highly correlated to the model and hru5, career_band_4, senior_analyst_1 and App_12_Atomic_App_Usage_IND are important. </p>
+            <div class="graphs">
+                <img src="image/project-5/graph-9.jpg" class="project-graphs" width="60%">
+            </div>
+            <p>Factor that App_3_Heat_Email_CAD is highly related to the model and career_band_10, App_9_Heat_USB_IND and App_27_Heat_USB_IND are important.</p>
+            <div class="graphs">
+                <img src="image/project-5/graph-10.jpg" class="project-graphs" width="60%">
+            </div>
+            <p>From above, factor that App_27_Heat_USB_IND is highly related to the model and App_9_Heat_Email_IND, App_7_Heat_USB_MIL and App_3_Heat_Email_CD etc. are important.</p>
+            <div class="graphs">
+                <img src="image/project-5/graph-11.jpg" class="project-graphs" width="60%">
+            </div>
+            <p>In this model, App_3_Heat_Email_CAD is highly related and factors that career_band_10 and App_7_Heat_USB_MIL are important. </p>
+            <div class="graphs">
+                <img src="image/project-5/graph-12.jpg" class="project-graphs" width="60%">
+            </div>
+            <p>In this model, indicator JOB_FUNCTION_16 is highly related and analyst_4, App_27_Heat_USB_IND and App_3_Heat_Email_CAD/TOP-User etc. are important. </p>
+            <div class="graphs">
+                <img src="image/project-5/graph-13.jpg" class="project-graphs" width="60%">
+            </div>
+            <p>In this model, App_3_Heat_Email_CAD is highly related and career_band_10, App_13_Heat_USB_IND and App_3_Heat_Email_CAD etc. are important. </p>
+            <div class="graphs">
+                <img src="image/project-5/graph-13.jpg" class="project-graphs" width="60%">
+            </div>
+            <p>In this model, career_band_10 is highly related and App_10_Threshold_Access_30_DAY and App_13_Heat_USB_IND are also important.</p>
+            <div class="project-subtitle">
+                <p>Confusion Talbe</p>
+            </div>
+            <div class="graphs">
+                <img src="image/project-5/graph-14.jpg" class="project-graphs" width="60%">
+            </div>
+            <p>From the table, we can know that notable risk in weekly heat has the most accuracy which is 591. In the high risky group, daily heat alert has the biggest number of accurate alerts which is 574. We need to increase the threshold probability of the model to test what probability is ideal to increase accurate alerts. </p>
+            <div class="project-subtitle">
+                <p>Lift Chart</p>
+            </div>
+            <div class="graphs">
+                <img src="image/project-5/graph-15.jpg" class="project-graphs" width="60%">
+            </div>
+            <p>From the lift charts, notable risk in weekly heat alert is the best predictive model because the difference between lift line (red line) and baseline (green line) is the biggest. </p>
+            <div class="project-subtitle">
+                <p>Threshold Probability</p>
+            </div>
+            <div class="graphs">
+                <img src="image/project-5/graph-16.jpg" class="project-graphs" width="60%">
+            </div>
+            <p>From the table, we can know that in the high risk of atomic alert, the probability should be 0.0001 then the accurate alerts would be 25165 and it will increase 25061 of accurate alerts compared with probability of 0.5 and the cost will be 371,274.2 dollars. Moreover, for the notable risk of atomic alert, the optimized probability is 0.001 and there will increase 19329 accurate alert and the cost will be 286,069.2. In addition, other types of alerts in high risky group and notable group don’t increase so much after optimization except notable risk in daily heat whose probability should be 0.05 and increased alerts are 12635. Although action of increasing accurate alerts cost amount of money, it will save huge amount of wasting money and increase the security of the system. </p>
+            <div class="project-subtitle">
+                <p>Recommendations</p>
+            </div>
+            <p>1.	The atomic alert in both high risk and notable risk as well as notable risk in daily heat need improvement immediately because they have low accuracy of alerts in the system.</p>
+            <p>2.	The probability of threshold in high risk and notable risk of atomic alert as well as notable risk in daily heat alert should be decreased to 0.0001, 0.001 and 0.05 respectively. Moreover, high risk and notable risk in weekly heat alert and monthly heat alert also high risk in daily heat alert should be increased to 0.99</p>
+            <p>3.	Analyst_2, Analyst_3 and Analyst_5 are not important in the alert program and they put few efforts to company. So, the company should consider whether to fire these three persons to save the employee cost. </p>
+            <p>4.	Senior_Analyst_1 plays an important role in atomic alert and notable risk in monthly heat alert, so the company should consider whether increase the salary for the person or divide the workload more evenly between Senior_Analyst_1 and Senior_Analyst_2.</p>
+            <p>5.	The indicator App_3_Heat_Email_CAD is important because it has high proportion in high risk and notable risk in these alerts more times so GE should have further investigation on this indicator and reasons why employees tend to make related mistake and trigger the indicator.</p>
+            <p>6.	CAREER_BAND_10, CAREER_BAND_4, JOB_FUNCTION_16 and hru5 are important, GE should take more attention on these factors. </p>
+            <div class="project-subtitle">
+                <p>Conclusion</p>
+            </div>
+            <p>From above, GE IP Theft and Fraud Detection System has problems that should be solved to increase the accuracy of alerts and the important factors in each model should have deeper investigation inside the company then find the best solution. For example, indicators that have bigger probability to trigger the alerts, analysts who have lower effort to the company as well as group of job junction that includes the most employees in high risk and notable risk etc. </p>
+            <div class="project-subtitle">
+                <p>Reference</p>
+            </div>
+            <p>GE Aviation. Retrieved from: https://www.geaviation.com/</p>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- footer section --> 
+<footer id="footer">
+    <div class="container">
+        <h3>Jie Wang</h3>
+        <div class="social-icon">
+            <a href="https://github.com/jessie-create" class="github"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/Jessiejiewang/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a href="mailto:wang.jie2@northeastern.edu" class="email"><i class='bx bx-mail-send'></i></a>
+        </div>
+        <div class="copyright">
+            Copyright <strong><span>Jie Wang 2021</span></strong>
+        </div>
+    </div>
+</footer>  
+</body>
+</html>
+
